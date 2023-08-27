@@ -62,3 +62,11 @@ setContent {
     }
 }
 ```
+
+Translation keys that might be overridden:
+```
+<string name="change_theme__title">App theme</string>
+<string name="change_theme__light_theme">Light theme</string>
+<string name="change_theme__dark_theme">Dark theme</string>
+<string name="change_theme__system_theme">System theme</string>
+```

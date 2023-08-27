@@ -7,17 +7,11 @@ plugins {
 }
 
 android {
-    compileSdk = 33
-
     defaultConfig {
         versionCode = 1
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
-        vectorDrawables {
-            useSupportLibrary = true
-        }
-        multiDexEnabled = true
     }
 
     buildTypes {
