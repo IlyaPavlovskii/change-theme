@@ -38,7 +38,7 @@ subprojects {
         }
     }
     group = "io.github.ilyapavlovskii.kmm.change.theme"
-    version = "2023.08.27"
+    version = "2024.05.12"
 
     setupJavaTarget(this)
 }
@@ -46,12 +46,12 @@ subprojects {
 fun setupJavaTarget(project: Project) {
     project.tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile> {
         kotlinOptions {
-            jvmTarget = JavaVersion.VERSION_11.toString()
+            jvmTarget = JavaVersion.VERSION_17.toString()
         }
     }
     project.tasks.withType<JavaCompile> {
-        sourceCompatibility = JavaVersion.VERSION_11.toString()
-        targetCompatibility = JavaVersion.VERSION_11.toString()
+        sourceCompatibility = JavaVersion.VERSION_17.toString()
+        targetCompatibility = JavaVersion.VERSION_17.toString()
     }
 }
 

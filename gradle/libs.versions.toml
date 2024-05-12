@@ -1,15 +1,16 @@
 [versions]
-kotlinVersion = "1.8.10"
-coroutinesVersion = "1.7.1"
+kotlinVersion = "1.9.22"
+coroutinesVersion = "1.8.0-RC2"
 # multiplatform
-kermitVersion = "1.2.2"
-koin = "3.4.1"
+kermitVersion = "2.0.2"
+koin = "3.5.3"
+kotlin-compiler-extension-version = "1.5.9"
 
 # android
 androidGradlePluginVersion = "7.4.2"
 appcompat = "1.7.0-alpha03"
-lifecycleVersion = "2.6.1"
-fragmentVersion = "1.6.1"
+lifecycleVersion = "2.7.0"
+fragmentVersion = "1.7.0"
 
 [libraries]
 #===========MULTIPLATFORM===========#
@@ -26,10 +27,10 @@ androidx-lifecycle-runtime = { module = "androidx.lifecycle:lifecycle-runtime-kt
 androidx-lifecycle-viewmodel-compose = { module = "androidx.lifecycle:lifecycle-viewmodel-compose", version.ref = "lifecycleVersion" }
 androidx-fragment = { module = "androidx.fragment:fragment-ktx", version.ref = "fragmentVersion" }
 androidx-appcompat = { module = "androidx.appcompat:appcompat", version.ref = "appcompat" }
-androidx-core-ktx = { module = "androidx.core:core-ktx", version = "1.10.1" }
-androidx-activity-compose = { module = "androidx.activity:activity-compose", version = "1.7.2" }
-androidx-compose-bom = { module = "androidx.compose:compose-bom", version = "2023.08.00" }
-androidx-compose-runtime = { module = "androidx.compose.runtime:runtime", version = "1.5.0" }
+androidx-core-ktx = { module = "androidx.core:core-ktx", version = "1.13.1" }
+androidx-activity-compose = { module = "androidx.activity:activity-compose", version = "1.9.0" }
+androidx-compose-bom = { module = "androidx.compose:compose-bom", version = "2024.05.00" }
+androidx-compose-runtime = { module = "androidx.compose.runtime:runtime", version = "1.6.7" }
 androidx-compose-ui = { module = "androidx.compose.ui:ui" }
 androidx-compose-ui-graphics = { module = "androidx.compose.ui:ui-graphics" }
 androidx-compose-ui-tooling-preview = { module = "androidx.compose.ui:ui-tooling-preview" }

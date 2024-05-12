@@ -2,14 +2,13 @@ package io.github.ilyapavlovskii.kmm.change.theme.presentation
 
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
-import org.koin.androidx.compose.getViewModel
+import org.koin.androidx.compose.koinViewModel
 
 @Composable
 fun ChangeThemeScreen(
     onBackClick: () -> Unit,
 ) {
-
-    val viewModel: ChangeThemeViewModel = getViewModel()
+    val viewModel: ChangeThemeViewModel = koinViewModel()
     val viewState = viewModel.viewState.collectAsState()
 
     ChangeThemeView(

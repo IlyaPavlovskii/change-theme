@@ -9,11 +9,11 @@ plugins {
 }
 
 dependencies {
-    val kotlinVersion = "1.7.21"
+    val kotlinVersion = "1.9.22"
     val agpVersion = "7.3.1"
     val detektVersion = "1.21.0"
     val ktlintVersion = "10.2.1"
-    val mobileMultiplatformVersion = "0.12.0"
+    val mobileMultiplatformVersion = "0.14.2"
     implementation("dev.icerock:mobile-multiplatform:$mobileMultiplatformVersion")
     implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion")
     implementation("com.android.tools.build:gradle:$agpVersion")
@@ -24,10 +24,10 @@ dependencies {
 
 project.tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile> {
     kotlinOptions {
-        jvmTarget = JavaVersion.VERSION_11.toString()
+        jvmTarget = JavaVersion.VERSION_17.toString()
     }
 }
 project.tasks.withType<JavaCompile> {
-    sourceCompatibility = JavaVersion.VERSION_11.toString()
-    targetCompatibility = JavaVersion.VERSION_11.toString()
+    sourceCompatibility = JavaVersion.VERSION_17.toString()
+    targetCompatibility = JavaVersion.VERSION_17.toString()
 }

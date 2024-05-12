@@ -6,11 +6,13 @@ plugins {
 }
 
 kotlin {
-    android {
+    androidTarget {
         publishLibraryVariants("release")
     }
-    ios()
-    jvm()
+    // iosX64()
+    // iosArm64()
+    // iosSimulatorArm64()
+    // jvm()
 
     sourceSets {
         all {
